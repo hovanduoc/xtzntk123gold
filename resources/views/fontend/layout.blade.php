@@ -34,8 +34,6 @@
         <span></span>
         </a>
         <div id="smoothmenu1" class="ddsmoothmenu">
-            <?php 
-            ?>
             <br style="clear: left" />
         </div>
     </div>
