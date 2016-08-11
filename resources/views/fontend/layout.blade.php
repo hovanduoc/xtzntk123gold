@@ -8,10 +8,10 @@
     <title>Giá Vàng</title>
 
     <!-- Bootstrap -->
-    <link href="{!!asset('fontend/css/bootstrap.min.css')!!}" rel="stylesheet">
-    <link href="{!!asset('fontend/css/style.css')!!}" rel="stylesheet">
-    <link href="{!!asset('fontend/css/ddsmoothmenu.css')!!}" rel="stylesheet">
-    <link href="{!!asset('fontend/css/ddsmoothmenu-v.css')!!}" rel="stylesheet">
+    <link href="{!!asset('public/fontend/css/bootstrap.min.css')!!}" rel="stylesheet">
+    <link href="{!!asset('public/fontend/css/style.css')!!}" rel="stylesheet">
+    <link href="{!!asset('public/fontend/css/ddsmoothmenu.css')!!}" rel="stylesheet">
+    <link href="{!!asset('public/fontend/css/ddsmoothmenu-v.css')!!}" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,7 +24,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-xs-12 col-sm-4 col-md-4">
-    				<img src="{!!asset('fontend/img/logo.png')!!}" class="img-responsive" alt="" title="">
+    				<img src="{!!asset('public/fontend/img/logo.png')!!}" class="img-responsive" alt="" title="">
     			</div>
     		</div>
     	</div>
@@ -41,7 +41,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-xs-12 col-sm-12 col-md-12">
-    				<img src="{!!asset('fontend/img/banner.gif')!!}" class="img-responsive banner" alt="" title="">
+    				<img src="{!!asset('public/fontend/img/banner.gif')!!}" class="img-responsive banner" alt="" title="">
     			</div>
     		</div>
     	</div>
@@ -83,7 +83,7 @@
 						    </div>
 							<div class="panel_body">
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
@@ -95,37 +95,37 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <img src="{!!asset('fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
+                                    <img src="{!!asset('public/fontend/img/img1.jpg')!!}" class="img-responsive col-xs-12 col-sm-4 col-md-4" alt="" title="">
                                     <div class="col-xs-12 col-sm-8 col-md-8">
                                         <a href="#">Dừng đèn đỏ, nam thanh niên bị xe tải cán tử vong tại chỗ</a>
                                     </div>
@@ -148,8 +148,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{!!asset('fontend/js/bootstrap.min.js')!!}"></script>
-    <script src="{!!asset('fontend/js/ddsmoothmenu.js')!!}"></script>
-    <script src="{!!asset('fontend/js/script.js')!!}"></script>
+    <script src="{!!asset('public/fontend/js/bootstrap.min.js')!!}"></script>
+    <script src="{!!asset('public/fontend/js/ddsmoothmenu.js')!!}"></script>
+    <script src="{!!asset('public/fontend/js/script.js')!!}"></script>
   </body>
 </html>

@@ -13,8 +13,44 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+	#RewriteRule ^index.php/(.*)$ /$1 [L,R=301]
+	RewriteRule ^index.php/(.*)$ $1 [R=301,L]
+
+	#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+	#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+	#Options +FollowSymLinks
+	#RewriteEngine On
+	#RewriteCond %{HTTP_HOST} ^www.ketqua79.net$
+	#RewriteRule ^(.*) http://ketqua79.net/$1  [QSA,L,R=301]
+
+
+	RewriteCond %{HTTP_HOST} ^www.ketqua79.net [NC]
+	RewriteRule ^(.*)$ http://localhost/xtzntk123gold/$1 [L,R=301,NC]
+
+
+
+	#img
+	RewriteEngine On
+	RewriteBase /
+	RewriteCond %{HTTP_REFERER} !^$
+	RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost/xtzntk123gold/.*$ [NC]
+	RewriteRule \.(gif|jpg|swf|flv|png)$ / [R=302,L]
+	#
+
+
+
+	RewriteCond %{HTTP_HOST} ^www\.
+	RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+	RewriteRule ^/(.*)$ /$1 [R=301,NC,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
+<Files .env>
+Order Allow,Deny
+Deny from all
+</Files>

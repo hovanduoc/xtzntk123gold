@@ -4,8 +4,8 @@
                 <li class="{{ Request::is('dashboard/listuser') ? 'active' : '' }}">
                     <a href="{!! url('dashboard/listuser') !!}"><i class="fa fa-fw fa-cog"></i> Quản Lý Thành Viên</a>
                 </li>
-                <li class="{{ Request::is('dashboard/result') ? 'active' : '' }}">
-                    <a href="{!! url('dashboard/result') !!}"><i class="fa fa-fw fa-cog"></i> Quản Lý Danh Mục </a>
+                <li class="{{ Request::is('dashboard/category') ? 'active' : '' }}">
+                    <a href="{!! url('dashboard/category') !!}"><i class="fa fa-fw fa-cog"></i> Quản Lý Danh Mục </a>
                 </li>
                 <li class="{{ Request::is('dashboard/result') ? 'active' : '' }}">
                     <a href="{!! url('dashboard/result') !!}"><i class="fa fa-fw fa-cog"></i> Quản Lý Quản Lý Tin</a>
