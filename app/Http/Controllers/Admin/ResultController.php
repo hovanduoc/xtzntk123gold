@@ -20,7 +20,6 @@ class ResultController extends Controller
     {
         // $result = InfoLink::orderBy('id', 'desc')->paginate(20);
         // return view('admin.result.index', compact('result'));
-        return "123";
     }
 
     //--------------------------------------------------------------

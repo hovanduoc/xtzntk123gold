@@ -4,7 +4,7 @@
     <form action="" method="get">
         <div class="action-bar">
             <div class="btn-bar pull-left btn_add">
-                <a href="{!! url('dashboard/user/create') !!}" class="btn btn-success">Thêm mới</a>
+                <a href="{!! url('dashboard/listuser/create') !!}" class="btn btn-success">Thêm mới</a>
             </div>
             <div class="search pull-right">
                 <div class="input-group">
