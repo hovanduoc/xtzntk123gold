@@ -32,8 +32,9 @@ Route::get('/dashboard', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::group(['prefix' => 'dashboard','middleware' => 'checklogin'], function(){
-        Route::controllers(['result'        => 'Admin\ResultController']);
+    Route::group(['prefix' => 'dashbo
+    ard','middleware' => 'checklogin'], function(){
+        Route::controllers(['category'        => 'Admin\CategoryController']);
         Route::controllers(['listuser'        => 'Admin\UserController']);
     });
     Route::get('/login',['as'=>'getLogin','uses'=>'Admin\UserController@getLogin']);
