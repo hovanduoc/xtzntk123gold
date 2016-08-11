@@ -12,14 +12,14 @@
     <title>@yield('title') - Admin</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{!! url('public/backend/css/bootstrap.min.css') !!}" rel="stylesheet">
+    <link href="{!! asset('backend/css/bootstrap.min.css') !!}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{!! url('public/backend/css/sb-admin.css') !!}" rel="stylesheet">
-    <link href="{!! url('public/backend/css/colorbox.css') !!}" rel="stylesheet">
+    <link href="{!! asset('backend/css/sb-admin.css') !!}" rel="stylesheet">
+    <link href="{!! asset('backend/css/colorbox.css') !!}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{!! url('public/backend/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet" type="text/css">
+    <link href="{!! asset('backend/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,10 +29,10 @@
     <![endif]-->
     <script type="text/javascript">
         var base_url = "{!! url('/') !!}";
-        var elfinder_url = '{!! url('public/assets/backend/elfinder/elfinder.php') !!}';
+        var elfinder_url = '{!! asset('assets/backend/elfinder/elfinder.php') !!}';
     </script>
     <!-- jQuery -->
-    <script src="{!! url('public/backend/js/jquery.js') !!}"></script>
+    <script src="{!! asset('backend/js/jquery.js') !!}"></script>
 </head>
 
 <body>

@@ -16,8 +16,10 @@ Route::get('/', function () {
     return view('fontend.layout');
 });
 Route::get('/dashboard', function () {
-    return redirect('dashboard/result');
+    #return redirect('dashboard/result');
+    return redirect('dashboard/listuser');
 });
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -31,10 +33,8 @@ Route::get('/dashboard', function () {
 
 Route::group(['middleware' => ['web']], function () {
     Route::group(['prefix' => 'dashboard','middleware' => 'checklogin'], function(){
-        // Route::controllers(['province'        => 'Admin\ProvinceController']);
         Route::controllers(['result'        => 'Admin\ResultController']);
-        // Route::controllers(['staff'        => 'Admin\NhanVienController']);
-        Route::controllers(['tracking'        => 'Admin\UserController']);
+        Route::controllers(['listuser'        => 'Admin\UserController']);
     });
     Route::get('/login',['as'=>'getLogin','uses'=>'Admin\UserController@getLogin']);
     Route::post('/login',['as'=>'postLogin','uses'=>'Admin\UserController@postLogin']);

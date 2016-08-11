@@ -36,7 +36,7 @@ class UserController extends Controller
     }
     public function getCreate()
     {
-        return view('admin.result.add');
+        return view('admin.user.add');
     }
     public function postCreate(Request $request)
     {
@@ -60,37 +60,10 @@ class UserController extends Controller
     	Session::flush();
         return redirect('/login');
     }
-    public function tracking($token){
-        $infolink = InfoLink::where('access_token',$token )->first();
-        $count = InfoLink::where('access_token',$token )->count();
-        $sum = $infolink->count;
-        $sum = $sum + 1;
-        if($count>0){
-        $ua = $_SERVER['HTTP_USER_AGENT'];
-        if (
-            strpos($_SERVER["HTTP_USER_AGENT"], "facebookexternalhit/") !== false ||          
-            strpos($_SERVER["HTTP_USER_AGENT"], "Facebot") !== false) {
-            return redirect($infolink->url);
-        }
-            else {
-                    $iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
-                    $iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-                    $iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
-                    $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
-                    $webOS   = stripos($_SERVER['HTTP_USER_AGENT'],"webOS");
-                if( $iPod || $iPhone || $Android || $webOS){
-                $update_token = InfoLink::where('access_token', $token)->update(['count' => $sum]);
-                return '<script type="text/javascript" src="//ylx-4.com/mobile_redir.php?section=General&pub=815762&ga=a"></script>';
-                }
-                else
-                {
-                    return redirect($infolink->url);
-                }
-            }
-        }
-        else
-        {
-            return redirect($infolink->url);
-        }
-     }
+
+    public function getIndex()
+    {
+        $user = \App\User::paginate(5);
+        return view('admin.user.index',compact('user'));
+    }
 }
